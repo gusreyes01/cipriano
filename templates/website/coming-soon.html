@@ -1,136 +1,74 @@
-
-
 {% extends 'base.html' %}
-
 {% load static %}
 
+{% block content %}	
+<!-- LOADER -->	
+<div id="loader-overflow">
+	<div id="loader3">Please enable JS</div>
+</div>	
 
-	{% block content %}
-	
-		<!-- LOADER -->	
-		<!--
-		<div id="loader-overflow">
-      <div id="loader3">Please enable JS</div>
-    </div>	
-    -->
+<div id="wrap" class="boxed ">
+	<div class="grey-bg"> <!-- Grey BG  -->	
+		
+		<!-- HEADER side menu -->
+		<header id="nav-stick" class="header header-1 header-side-menu black-header"  >
+			<div class="header-wrapper">
+				<div class="container-m-30 clearfix">
+					<div class="logo-row">
 
-		<div id="wrap" class="boxed ">
-			<div class="grey-bg"> <!-- Grey BG  -->	
-			
-				<!-- HEADER side menu -->
-				<header id="nav-stick" class="header header-1 header-side-menu black-header"  >
-				  <div class="header-wrapper">
-            <div class="container-m-30 clearfix">
-              <div class="logo-row">
-              
-              <!-- LOGO --> 
-              <div class="logo-container-2">
-                <div class="logo-2">
-                  <a href="index.html" class="clearfix">
-                    <img src="{% static 'images/logo-white.png' %}" class="logo-img" alt="Logo">
-                  </a>
-                </div>
-              </div>
-             </div>
-            </div>
-            
-            <!-- BUTTON --> 
-            <!--
-            <div class="menu-btn-respons-container2">
-              <a class="fs-primary-nav-trigger" href="#"><span class="fs-menu-icon"></span></a>
-            </div>
-            -->
-				  </div> <!-- END header-wrapper -->
-				  
-				</header>
-
-        <!-- STATIC MEDIA IMAGE -->
-        <div class="sm-img-bg-fullscr parallax-section" style="background-image: url({% static 'images/static-media/coming-soon2-bg.jpg' %})" data-stellar-background-ratio="0.5">
-          <div class="container sm-content-cont text-center js-height-fullscr">
-            <div class="sm-cont-middle">
-
-							<!-- OPACITY container -->
-							<div class="opacity-scroll2">
-
-						  	<!-- LAYER NR. 1 -->
-						  	<div class="container maintenance-container">
-                  <div class="row">
-                    <div class="col-md-12 text-center coming-soon-main-text-container">
-                      <h1 class="text-center font-white">WE'RE COMING SOON</h1>
-                      <h3 class="mb-80 font-white" >Estamos trabajando en nuestro nuevo sitio. Lo tendremos disponible muy pronto. </h3>
-                    </div>
-                  </div>
-                  <div class="row mb-40">
-                    <!-- CLOCK -->	
-                    <div id="clock" class="clearfix text-center"></div>
-                  </div>
-                </div>
-
+						<!-- LOGO --> 
+						<div class="logo-container-2">
+							<div class="logo-2">
+								<a href="index.html" class="clearfix">
+									<img src="{% static 'images/logo-white.png' %}" class="logo-img" alt="Logo">
+								</a>
 							</div>
+						</div>
+					</div>
+				</div>
 
-            </div>
-          </div>
-        </div>	
-          
-						
-            </div>
+				<!-- BUTTON --> 
+				<!--
+				<div class="menu-btn-respons-container2">
+					<a class="fs-primary-nav-trigger" href="#"><span class="fs-menu-icon"></span></a>
+				</div>
+				-->
+			</div> <!-- END header-wrapper -->
+
+		</header>
+
+		<!-- STATIC MEDIA IMAGE -->
+		<div class="sm-img-bg-fullscr parallax-section" style="background-image: url({% static 'images/static-media/coming-soon2-bg.jpg' %})" data-stellar-background-ratio="0.5">
+			<div class="container sm-content-cont text-center js-height-fullscr">
+				<div class="sm-cont-middle">
+
+					<!-- OPACITY container -->
+					<div class="opacity-scroll2">
+
+						<!-- LAYER NR. 1 -->
+						<div class="container maintenance-container">
+							<div class="row">
+								<div class="col-md-12 text-center coming-soon-main-text-container">
+									<h1 class="text-center font-white">WE'RE COMING SOON</h1>
+									<h3 class="mb-80 font-white" >Estamos trabajando en nuestro nuevo sitio. Lo tendremos disponible muy pronto. </h3>
+								</div>
+							</div>
+							<div class="row mb-40">
+								<!-- CLOCK -->	
+								<div id="clock" class="clearfix text-center"></div>
+							</div>
+						</div>
+
 					</div>
 
-		{% endblock %}
-        
-      
-	{% block scripts %}
-	<!-- JS begin -->
+				</div>
+			</div>
 
-	<!-- jQuery  -->
-	<script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"</script>
+		</div>	
+	</div>
+</div>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="{% static 'js/bootstrap.min.js' %}"</script>		
+{% endblock %}
 
-	<!-- MAGNIFIC POPUP -->
-	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    
-    <!-- PORTFOLIO SCRIPTS -->
-    <script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"</script>
-    <script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"</script>
-    <script type="text/javascript" src="{% static 'js/masonry.pkgd.min.js' %}"</script>
-    
-    <!-- COUNTER -->
-    <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"</script>
-    
-    <!-- APPEAR -->    
-    <script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"</script>
-    
-    <!-- OWL CAROUSEL -->    
-    <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"</script>
-    
-    <!-- PARALLAX -->    
-    <script type="text/javascript" src="{% static 'js/jquery.stellar.min.js' %}"</script>
-    
-    <!-- MAIN SCRIPT -->
-		<script src="{% static 'js/main.js' %}"</script>
-    
-        
-    <!-- COUNTDOWN -->
-		<script src="{% static 'js/jquery.countdown.min.js' %}"</script>
-    <script>
-      	//COUNTDOWN -----------------------------------------------------------------------------
-				$('#clock').countdown('2016/10/10').on('update.countdown', function(event) {
-				   var $this = $(this).html(event.strftime(''
-					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%D</span><span class="countdown-period">day%!D</span></div></div>'
-					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%H</span><span class="countdown-period">hour%!H</span></div></div>'
-					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%M</span><span class="countdown-period">minute%!M</span></div></div>'
-					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%S</span><span class="countdown-period">second%!S</span></div></div>'));
-				 });
-    </script>
-    
-
-    <!-- FULL SCREEN MENU -->
-		<script src="{% static 'js/fs-menu.js' %}"</script>
-
-<!-- JS end -->	
-	
-	{% endblock %}
 
 

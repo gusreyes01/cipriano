@@ -1,50 +1,72 @@
+<!DOCTYPE html>
+
 {% load static %}
 <html>
 
-	<head>
-		<title>Haswell - Responsive HTML5 Template</title>
-		<meta charset=utf-8 >
-		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
-		<meta name="robots" content="index, follow" > 
-		<meta name="keywords" content="HTML5 Template" > 
-		<meta name="description" content="Haswell - Responsive HTML5 Template" > 
-		<meta name="author" content="Vladimir Azarushkin">
+ 	<head>
+	<title>Cipriano Almaguer Arquitectos</title>
+	<meta charset=utf-8 >
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="robots" content="index, follow" > 
+	<meta name="keywords" content="HTML5 Template" > 
+	<meta name="description" content="Cipriano Almaguer" > 
+	<meta name="author" content="Vladimir Azarushkin">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-		<!-- FAVICONS -->
-	    <link rel="shortcut icon" href="{% static 'images/favicon/favicon.png' %}">
-	    <link rel="apple-touch-icon" href="{% static 'images/favicon/apple-touch-icon.png' %}">
-	    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/favicon/apple-touch-icon-72x72.png' %}">
-	    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/favicon/apple-touch-icon-114x114.png' %}">
-    <!-- REVOSLIDER CSS SETTINGS -->
-    	<link rel="stylesheet" type="text/css" href="{% static 'rs-plugin/css/settings.min.css' %}" media="screen" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!--  BOOTSTRAP -->
-		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
-	
-    <!--  GOOGLE FONT -->		
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  
-    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
-		<link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" >	
-	
-    <!--  CSS THEME -->		
-		<link rel="stylesheet" href="{% static 'css/style.css' %}" >
-	
-    <!-- ANIMATE -->	
-		<link rel='stylesheet' href="{% static 'css/animate.min.css' %}">
+	<!-- FAVICONS -->
+	<link rel="shortcut icon" href="{% static 'images/favicon/favicon.png' %}">
+	<link rel="apple-touch-icon" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/favicon/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/favicon/apple-touch-icon-114x114.png' %}">
 
-		{% block styles %}
-		{% endblock %}
+	<!-- CSS -->
+	<!-- REVOSLIDER CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'rs-plugin/css/settings.min.css' %}" media="screen" />
+
+	<!--  BOOTSTRAP -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+
+	<!--  GOOGLE FONT -->		
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
+	<link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" >	
+
+	<!--  CSS THEME -->		
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" >
+
+	<!-- ANIMATE -->	
+	<link rel='stylesheet' href="{% static 'css/animate.min.css' %}">
+
+	<!-- IE Warning CSS -->
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
+
+	<!-- Magnific popup  in style.css	Owl Carousel Assets in style.css -->		
+
+	<!-- CSS end -->
+
+	<!-- JS begin some js files in bottom of file-->
+	<script src="{% static 'js/modernizr.js' %}"></script> <!-- Modernizr -->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+
+	{% block styles %}
+	{% endblock %}
+   
 	</head>
 
 	<body>
 
 		{% block content %}
 		{% endblock %}
-
-
 
         <!-- FOOTER 1 -->
         <footer id="footer1" class="page-section text-center pt-100-b-80-cont">
@@ -90,19 +112,103 @@
         </div>
       </nav>
       -->
+
+
+      
+      <!-- MENU -->      
+      <nav>
+        <div class="fs-primary-nav fs-nav-black">
+          <ul class="block-center-xy">
+            <li><a class="a-white" href="#">inicio</a></li>
+            <li><a class="a-white" href="#">quiénes somos</a></li>
+            <li><a class="a-white" href="#">nuestros projectos</a></li>
+            <li><a class="a-white" href="#">nuestros servicios</a></li>
+
+            <li class="fs-label">TRABAJA CON NOSOTROS</li>
+            
+            <!--
+            <li>
+              <div class="footer-2-soc-a mt-20">
+                <a class="a-white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="a-white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class="a-white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
+                <a class="a-white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="a-white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+              </div>
+            </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+
+
+
+
       
       <!-- BACK TO TOP -->
-			<p id="back-top">
-        <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
-      </p>
+		<p id="back-top">
+        	<a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+      	</p>
         
-			</div><!-- End BG -->	
+		</div><!-- End BG -->	
 		</div><!-- End wrap -->	
 
 
-	</body>
 
+
+
+			
+<!-- JS begin -->
+
+		<!-- jQuery  -->
+	<script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>		
+
+		<!-- MAGNIFIC POPUP -->
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    
+    <!-- PORTFOLIO SCRIPTS -->
+    <script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    
+    <!-- COUNTER -->
+    <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+    
+    <!-- APPEAR -->    
+    <script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>
+    
+    <!-- OWL CAROUSEL -->    
+    <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+    
+    <!-- PARALLAX -->    
+    <script type="text/javascript" src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    
+    <!-- MAIN SCRIPT -->
+		<script src="{% static 'js/main.js' %}"></script>
+    
+        
+    <!-- COUNTDOWN -->
+		<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script>
+      	//COUNTDOWN -----------------------------------------------------------------------------
+				$('#clock').countdown('2016/05/10').on('update.countdown', function(event) {
+				   var $this = $(this).html(event.strftime(''
+					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%D</span><span class="countdown-period">DIA%!D</span></div></div>'
+					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%H</span><span class="countdown-period">HORA%!H</span></div></div>'
+					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%M</span><span class="countdown-period">MINUTO%!M</span></div></div>'
+					 + '<div class="col-xs-12 col-sm-6 col-md-3"><div class="countdown-item-container2"><span class="countdown-amount">%S</span><span class="countdown-period">SEGUNDO%!S</span></div></div>'));
+				 });
+    </script>
+    
+
+    <!-- FULL SCREEN MENU -->
+	<script src="{% static 'js/fs-menu.js' %}"></script>
+
+	<!-- JS end -->	
 	{% block scripts %}
 	{% endblock %}
-
+	</body>
 </html>
