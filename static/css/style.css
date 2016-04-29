@@ -9741,6 +9741,11 @@ header.is-fixed {
 .black-header .fs-primary-nav-trigger .fs-menu-icon.is-clicked::before, .black-header .fs-primary-nav-trigger .fs-menu-icon.is-clicked::after {
   background-color: #fff;
 }
+
+.fs-primary-nav-trigger {
+  margin-top: 5px;
+}
+
 .fs-primary-nav-trigger .fs-menu-icon.is-clicked::before {
   top: 0;
   -webkit-transform: rotate(135deg);

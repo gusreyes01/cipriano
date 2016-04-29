@@ -1,0 +1,64 @@
+{% extends 'base.html' %} {% load static %}
+
+
+{% block content %}
+
+<div class="page-title-cont page-title-small grey-light-bg">
+  <div class="relative container align-left">
+    <div class="row">
+      
+      <div class="col-md-8">
+        <h1 class="page-title">ESTUDIO</h1>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a><span class="slash-divider">/</span><a href="#">PAGES &amp; FEATURES</a><span class="slash-divider">/</span><span class="bread-current">PORTFOLIO</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="white-bg plr-30 pt-50 pb-30">
+        
+  <div class="relative">
+    <!-- PORTFOLIO FILTER -->                    
+    <div class="port-filter text-center text-left-767">
+      <a href="#" class="filter active" data-filter="*">All Projects</a>
+      <a href="#" class="filter" data-filter=".development">Development</a>
+      <a href="#" class="filter" data-filter=".design">Design</a>
+      <a href="#" class="filter" data-filter=".photography">Photography</a>
+    </div>                    
+            
+    <!-- ITEMS GRID -->
+    <ul class="port-grid port-grid-2 masonry clearfix" id="items-grid" style="position: relative; height: 1632.11px;">
+      
+      <!-- Item 1 -->
+      <li class="port-item mix development" style="position: absolute; left: 0px; top: 0px;">
+        <a href="portfolio-single1.html">
+          <div class="port-img-overlay"><img class="port-main-img" src="{% static 'images/portfolio/projects-4.jpg' %}" alt="img"></div>
+        </a>
+        <div class="port-overlay-cont">
+
+            <div class="port-title-cont">
+              <h3><a href="portfolio-single1.html">MINIMALISM BOOKS</a></h3>
+              <span><a href="#">ui elements</a><span class="slash-divider">/</span><a href="#">media</a></span>
+            </div>
+            <div class="port-btn-cont">
+              <a href="{% static 'images/portfolio/projects-2-big.jpg' %}" class="lightbox mr-20"><div aria-hidden="true" class="icon_search"></div></a>
+              <a href="portfolio-single1.html"><div aria-hidden="true" class="icon_link"></div></a>
+            </div>
+
+        </div>
+      </li>
+
+
+    </ul>
+  
+  </div>
+
+</div>
+
+{% endblock %}
