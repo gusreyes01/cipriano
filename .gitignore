@@ -3,3 +3,10 @@
 settings.py
 migrations/
 db.sqlite3
+.idea/cipriano.iml
+
+.idea/dataSources.ids
+
+*.xml
+
+.idea/vcs.xml
